@@ -9,7 +9,7 @@ export const MenuItem: FC<MenuItemProps> = ({ text = '', icon }) => {
   return (
     <div className='flex items-center space-x-4'>
       {icon}
-       <span className='text-medium-gray hover:text-almost-black cursor-pointer'>{text}</span>
+       <span className='text-medium-gray hover:text-almost-black cursor-pointer select-none'>{text}</span>
     </div>
   )
 }

@@ -18,7 +18,7 @@ export const NavItem: FC<NavItemProps> = ({ text = '', children }) => {
         <div className='relative'>
             <div className="flex space-x-2 cursor-pointer items-center">
                 <span
-                    className='text-medium-gray hover:text-almost-black'
+                    className='text-medium-gray hover:text-almost-black select-none'
                     onClick={openMenuHandler}
                 >{text}</span>
 

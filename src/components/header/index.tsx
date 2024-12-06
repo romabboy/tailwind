@@ -3,11 +3,12 @@ import { ReactComponent as LogoIcon } from '../../images/logo.svg';
 import { NavItem } from '../nav-item';
 import { NavMenu } from '../nav_menu';
 import { COMPANY, FEATURES } from './constant';
+import { Button } from '../button';
 // import LogoIcon from '../../images/logo.svg';
 
 export const Header: FC = () => {
     return (
-        <header className='flex'>
+        <header className='flex items-center'>
             <LogoIcon />
             <nav className='flex space-x-6 ml-8 items-center'>
                 <NavItem text='Feature'>
@@ -19,6 +20,9 @@ export const Header: FC = () => {
                 <NavItem text='Carears' />
                 <NavItem text='About' />
             </nav>
+            <div className="ml-auto flex space-x-5">
+                <Button hasBorder={true}>Loggin</Button>
+            </div>
         </header>
     )
 }
