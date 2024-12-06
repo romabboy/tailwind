@@ -14,8 +14,8 @@ class IMainSection{
 
 export const MainSection = () => {
   return (
-    <section className='w-full'>
-        asdfsdf
+    <section className='w-full mt-6'>
+        <div className="relative w-2/4"></div>
     </section>
   )
 }
